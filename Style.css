@@ -102,14 +102,26 @@ li {
   box-shadow: 0 4px 15px rgba(7, 152, 189, 0.637);
 }
 
-/* Imagem logo da uninter */
+/* FORMAÇÃO ACADEMICA*/
 
 .img-esquerda {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
+
+  margin: 35px;
+  width: 350px;
   border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(7, 152, 189, 0.781);
 }
+
+.formacao-texto {
+  max-width: 600px;
+}
+
+.formacao-texto p {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+
 
 /* formatação dos links */
 a {

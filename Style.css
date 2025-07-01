@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header / Navegação */
+header {
+  background-color: #1f1f1f;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-desktop ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.menu-desktop a {
+  text-decoration: none;
+  color: #00adb5;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+    .menu-desktop a:hover {
+    background-color: #00adb5;
+    color: #121212;
+    }
+
+/* Conteúdo principal */
+main {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: #ffd369;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #00adb5;
+  border-left: 5px solid #00adb5;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+h3, h4 {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  color: #ffd369;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+ul, ol {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Imagem de perfil */
+.minhafoto {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(7, 152, 189, 0.637);
+}
+
+/* Imagem logo da uninter */
+
+.img-esquerda {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* formatação dos links */
+a {
+    
+  color: #00adb5;
+  text-decoration: none;
+  color: #00adb5;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+    
+}
+
+a:hover {
+  background-color: #00adb5;
+  text-decoration: underline;
+  color: #ffd369;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu-desktop ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "EmailApplication",
+            "request": "launch",
+            "mainClass": "com.example.demo.EmailApplication",
+            "projectName": "envio-email"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoApplication<envio-email>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.demo.DemoApplication",
+            "projectName": "envio-email",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

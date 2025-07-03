@@ -143,6 +143,95 @@ a:hover {
   color: #ffd369;
 }
 
+/* formataçao do contato */
+
+
+.sucesso {
+  background-color: #00adb5;
+  color: #121212;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: fadein 0.6s ease;
+}
+
+/* Animação fade-in */
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contato-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 173, 181, 0.2);
+}
+
+
+/*formatação do formulário de contato */
+.contato-container h2 {
+  text-align: center;
+  color: #00adb5;
+  margin-bottom: 20px;
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-contato label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.form-contato input,
+.form-contato textarea {
+  background-color: #2d2d2d;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  border-color: #00adb5;
+  outline: none;
+}
+
+.form-contato button {
+  background-color: #00adb5;
+  color: #121212;
+  font-weight: bold;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-contato button:hover {
+  background-color: #00969c;
+}
+
+
+
 /* Responsivo */
 @media (max-width: 768px) {
   .menu-desktop ul {

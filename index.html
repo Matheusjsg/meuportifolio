@@ -7,6 +7,8 @@
   <title>Matheus Jesus</title>
   <link rel="stylesheet" href="Style.css" />
 
+  
+  <!-- Script para integrar Whatsapp -->
   <script type="text/javascript">
       window.onload = function(){
       (function(d, script) {
@@ -20,7 +22,7 @@
       </script>
       
 </head>
-
+<!-- opções menu -->
 <body>
   <header>
     <nav class="menu-desktop">
@@ -35,7 +37,7 @@
   </header>
 
   <main>
-    <!-- Seção Início -->
+    <!-- Seção Início com minha foto-->
     <section id="inicio">
       <img class="minhafoto" src="imagens/minhafoto.jpg" alt="Foto de Matheus Jesus" width="200" height="200" />
 
@@ -61,9 +63,10 @@
   <div class="formacao-box">
    
     <h2>Formação Acadêmica</h2>
+    <br>
 
     <img class="img-esquerda" src="imagens/uninter.png" alt="Logo UNINTER" />
-
+<br>
     <div class="formacao-texto">
       <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
       <p><strong>Instituição:</strong> Centro Universitário Internacional – UNINTER</p>
@@ -136,10 +139,9 @@
     <section id="contato" class="contato-container">
   <h2>
 
+    <!-- formulario de envio de email-->
   </h2>Envie uma Mensagem</h2>
-
   
-
   <form id="formContato" class="form-contato">
     <label for="nome">Nome:</label>
     <input type="text" id="nome" name="nome" required />
@@ -151,11 +153,8 @@
     <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
     <button type="submit">Enviar Mensagem</button>
-
-    
-
   </form>
-    </section>
+  </section>
 
 <!-- Alerta de sucesso -->
   <div id="mensagem-sucesso" class="sucesso" style="display: none;">
@@ -201,9 +200,14 @@
     }
   });
 </script>
-</script>
+  
+  <!-- Rodapé -->
 
-  </main>
+<footer class="rodape">
+  <p>&copy; 2025 Matheus Jesus. Todos os direitos reservados.</p>
+</footer>
+
+</main>
 </body>
 
 </html>

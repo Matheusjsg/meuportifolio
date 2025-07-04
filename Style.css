@@ -1,10 +1,11 @@
-
+/* Reset de margem, padding e box-sizing para todos os elementos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos gerais do corpo da página */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #121212;
@@ -13,7 +14,7 @@ body {
   padding: 20px;
 }
 
-/* Header / Navegação */
+/* Cabeçalho com sombra e espaçamento */
 header {
   background-color: #1f1f1f;
   padding: 20px 0;
@@ -21,6 +22,7 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Menu principal em desktop */
 .menu-desktop ul {
   list-style: none;
   display: flex;
@@ -39,22 +41,24 @@ header {
   transition: all 0.3s ease;
 }
 
-    .menu-desktop a:hover {
-    background-color: #00adb5;
-    color: #121212;
-    }
+.menu-desktop a:hover {
+  background-color: #00adb5;
+  color: #121212;
+}
 
-/* Conteúdo principal */
+/* Área principal centralizada */
 main {
   max-width: 960px;
   margin: auto;
   padding: 0 20px;
 }
 
+/* Seções com margem inferior */
 section {
   margin-bottom: 40px;
 }
 
+/* Títulos principais */
 h1 {
   font-size: 2.4rem;
   text-align: center;
@@ -76,12 +80,14 @@ h3, h4 {
   color: #ffd369;
 }
 
+/* Parágrafos */
 p {
   font-size: 1.1rem;
   margin-bottom: 15px;
   text-align: justify;
 }
 
+/* Listas */
 ul, ol {
   margin-left: 30px;
   margin-bottom: 20px;
@@ -92,7 +98,7 @@ li {
   margin-bottom: 8px;
 }
 
-/* Imagem de perfil */
+/* Imagem de perfil redonda e centralizada */
 .minhafoto {
   display: block;
   margin: 20px auto;
@@ -102,39 +108,33 @@ li {
   box-shadow: 0 4px 15px rgba(7, 152, 189, 0.637);
 }
 
-/* FORMAÇÃO ACADEMICA*/
-
+/* Imagem da formação com adaptação */
 .img-esquerda {
-
-  margin: 35px;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
+  
+  display: block;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(7, 152, 189, 0.781);
 }
 
-.formacao-texto {
-  max-width: 600px;
-}
+/* Texto da formação */
+
 
 .formacao-texto p {
   margin-bottom: 10px;
   font-size: 1.05rem;
 }
 
-
-
-/* formatação dos links */
+/* Links em geral */
 a {
-    
   color: #00adb5;
   text-decoration: none;
-  color: #00adb5;
   font-weight: bold;
   font-size: 1rem;
   padding: 8px 16px;
   border-radius: 8px;
   transition: all 0.3s ease;
-    
 }
 
 a:hover {
@@ -143,9 +143,7 @@ a:hover {
   color: #ffd369;
 }
 
-/* formataçao do contato */
-
-
+/* Caixa de sucesso após envio de formulário */
 .sucesso {
   background-color: #00adb5;
   color: #121212;
@@ -157,7 +155,7 @@ a:hover {
   animation: fadein 0.6s ease;
 }
 
-/* Animação fade-in */
+/* Animação de entrada */
 @keyframes fadein {
   from {
     opacity: 0;
@@ -169,6 +167,7 @@ a:hover {
   }
 }
 
+/* Container visual do formulário */
 .contato-container {
   max-width: 600px;
   margin: 60px auto;
@@ -178,14 +177,14 @@ a:hover {
   box-shadow: 0 0 20px rgba(0, 173, 181, 0.2);
 }
 
-
-/*formatação do formulário de contato */
+/* Título da seção de contato */
 .contato-container h2 {
   text-align: center;
   color: #00adb5;
   margin-bottom: 20px;
 }
 
+/* Formulário de contato */
 .form-contato {
   display: flex;
   flex-direction: column;
@@ -230,13 +229,14 @@ a:hover {
   background-color: #00969c;
 }
 
+/* RESPONSIVIDADE */
 
-
-/* Responsivo */
+/* Para telas até 768px (tablet e celular) */
 @media (max-width: 768px) {
   .menu-desktop ul {
     flex-direction: column;
     gap: 10px;
+    align-items: center;
   }
 
   body {
@@ -245,5 +245,68 @@ a:hover {
 
   main {
     padding: 0 10px;
+  }
+
+  .formacao-texto {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p, li, label {
+    font-size: 1rem;
+  }
+
+  .form-contato input,
+  .form-contato textarea {
+    font-size: 1rem;
+  }
+}
+
+
+/* RODAPÉ */
+.rodape {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  border-top: 2px solid #00adb5;
+}
+
+
+/* Para telas pequenas (celulares menores) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p, li, label {
+    font-size: 0.95rem;
+  }
+
+  .form-contato input,
+  .form-contato textarea {
+    font-size: 0.9rem;
+  }
+
+  .form-contato button {
+    font-size: 0.95rem;
+  }
+
+   .rodape {
+    font-size: 0.85rem;
   }
 }

@@ -179,7 +179,7 @@
     };
 
     try {
-      const resposta = await fetch("https://envio-email.onrender.com/api/contato", {
+      const resposta = await fetch("https://apienvioemail.onrender.com/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(dados)

@@ -1,312 +1,255 @@
-/* Reset de margem, padding e box-sizing para todos os elementos */
+/* ====== ESTILOS GERAIS ====== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
 }
 
-/* Estilos gerais do corpo da página */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #f7f9fb;
+  color: #222;
   line-height: 1.6;
-  padding: 20px;
 }
 
-/* Cabeçalho com sombra e espaçamento */
+/* ====== CABEÇALHO ====== */
 header {
-  background-color: #1f1f1f;
-  padding: 20px 0;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background: #0a0a23;
+  padding: 1.2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Menu principal em desktop */
 .menu-desktop ul {
-  list-style: none;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  gap: 2.5rem;
+  list-style: none;
 }
 
 .menu-desktop a {
   text-decoration: none;
-  color: #00adb5;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 8px 16px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .menu-desktop a:hover {
-  background-color: #00adb5;
-  color: #121212;
+  color: #4fc3f7;
 }
 
-/* Área principal centralizada */
-main {
-  max-width: 960px;
-  margin: auto;
-  padding: 0 20px;
-}
-
-/* Seções com margem inferior */
+/* ====== SEÇÕES ====== */
 section {
-  margin-bottom: 40px;
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1rem;
 }
 
-/* Títulos principais */
+h1, h2 {
+  color: #0a0a23;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 h1 {
   font-size: 2.4rem;
-  text-align: center;
-  color: #ffd369;
-  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 1.8rem;
-  color: #00adb5;
-  border-left: 5px solid #00adb5;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  border-bottom: 3px solid #4fc3f7;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  margin-bottom: 2rem;
 }
 
-h3, h4 {
-  font-size: 1.3rem;
-  margin-top: 20px;
-  color: #ffd369;
+/* ====== FOTO INICIAL ====== */
+#inicio {
+  text-align: center;
+  padding-top: 3rem;
 }
 
-/* Parágrafos */
-p {
+.minhafoto {
+  border-radius: 50%;
+  border: 4px solid #4fc3f7;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.minhafoto:hover {
+  transform: scale(1.05);
+}
+
+#inicio p {
   font-size: 1.1rem;
-  margin-bottom: 15px;
+  color: #555;
+}
+
+/* ====== SEÇÃO SOBRE ====== */
+#sobre p {
+  margin-bottom: 1rem;
   text-align: justify;
 }
 
-/* Listas */
+/* ====== FORMAÇÃO ====== */
+.formacao-container {
+  display: flex;
+  justify-content: center;
+}
+
+.formacao-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.formacao-box img {
+  width: 120px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.formacao-texto p, h1 {
+  text-align: center;
+  margin: 0.4rem 0;
+}
+
+/* ====== LISTAS ====== */
 ul, ol {
-  margin-left: 30px;
-  margin-bottom: 20px;
-  font-size: 1.05rem;
+  margin-left: 2rem;
+  color: #333;
 }
 
 li {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
-/* Imagem de perfil redonda e centralizada */
-.minhafoto {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(7, 152, 189, 0.637);
+/* ====== SEÇÃO PROJETOS ====== */
+#projetos h3 {
+  color: #222;
+  margin-top: 1.5rem;
 }
 
-/* Imagem da formação com adaptação */
-.img-esquerda {
-  width: 100%;
-  max-width: 350px;
-  
-  display: block;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(7, 152, 189, 0.781);
+#projetos ul {
+  margin-left: 1.5rem;
 }
 
-/* Texto da formação */
-
-
-.formacao-texto p {
-  margin-bottom: 10px;
-  font-size: 1.05rem;
+#projetos li {
+  list-style-type: disc;
 }
 
-/* Links em geral */
-a {
-  color: #00adb5;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1rem;
-  padding: 8px 16px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-a:hover {
-  background-color: #00adb5;
-  text-decoration: underline;
-  color: #ffd369;
-}
-
-/* Caixa de sucesso após envio de formulário */
-.sucesso {
-  background-color: #00adb5;
-  color: #121212;
-  padding: 12px;
-  border-radius: 8px;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 20px;
-  animation: fadein 0.6s ease;
-}
-
-/* Animação de entrada */
-@keyframes fadein {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Container visual do formulário */
-.contato-container {
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 30px;
-  background-color: #1f1f1f;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 173, 181, 0.2);
-}
-
-/* Título da seção de contato */
-.contato-container h2 {
-  text-align: center;
-  color: #00adb5;
-  margin-bottom: 20px;
-}
-
-/* Formulário de contato */
+/* ====== FORMULÁRIO DE CONTATO ====== */
 .form-contato {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
 .form-contato label {
-  margin-bottom: 5px;
   font-weight: bold;
-  color: #e0e0e0;
+  color: #0a0a23;
 }
 
 .form-contato input,
 .form-contato textarea {
-  background-color: #2d2d2d;
-  color: #f0f0f0;
-  border: 1px solid #444;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 10px;
-  margin-bottom: 20px;
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .form-contato input:focus,
 .form-contato textarea:focus {
-  border-color: #00adb5;
+  border-color: #4fc3f7;
   outline: none;
+  box-shadow: 0 0 5px rgba(79, 195, 247, 0.5);
 }
 
 .form-contato button {
-  background-color: #00adb5;
-  color: #121212;
-  font-weight: bold;
+  background-color: #0a0a23;
+  color: #fff;
+  padding: 0.8rem;
   border: none;
-  padding: 12px;
   border-radius: 8px;
+  font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .form-contato button:hover {
-  background-color: #00969c;
+  background-color: #4fc3f7;
+  color: #0a0a23;
 }
 
-/* RESPONSIVIDADE */
+/* ====== SUCESSO ====== */
+.sucesso {
+  background-color: #e0f7fa;
+  color: #00695c;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  margin-top: 1rem;
+  font-weight: 500;
+}
 
-/* Para telas até 768px (tablet e celular) */
+/* ====== RODAPÉ ====== */
+.rodape {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #0a0a23;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+/* ====== LINKS DE CONTATO ====== */
+#contatos ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+#contatos a {
+  text-decoration: none;
+  color: #0a0a23;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#contatos a:hover {
+  color: #4fc3f7;
+}
+
+/* ====== RESPONSIVIDADE ====== */
 @media (max-width: 768px) {
   .menu-desktop ul {
     flex-direction: column;
-    gap: 10px;
-    align-items: center;
+    gap: 1rem;
   }
 
-  body {
-    padding: 10px;
+  header {
+    text-align: center;
   }
 
-  main {
-    padding: 0 10px;
+  section {
+    margin: 3rem 1rem;
   }
 
-  .formacao-texto {
-    max-width: 100%;
-    padding: 0;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  p, li, label {
-    font-size: 1rem;
-  }
-
-  .form-contato input,
-  .form-contato textarea {
-    font-size: 1rem;
+  .formacao-box {
+    padding: 1.5rem;
   }
 }
 
 
-/* RODAPÉ */
-.rodape {
-  background-color: #1f1f1f;
-  padding: 20px;
-  text-align: center;
-  margin-top: 40px;
-  color: #e0e0e0;
-  font-size: 0.95rem;
-  border-top: 2px solid #00adb5;
-}
-
-
-/* Para telas pequenas (celulares menores) */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  p, li, label {
-    font-size: 0.95rem;
-  }
-
-  .form-contato input,
-  .form-contato textarea {
-    font-size: 0.9rem;
-  }
-
-  .form-contato button {
-    font-size: 0.95rem;
-  }
-
-   .rodape {
-    font-size: 0.85rem;
-  }
-}

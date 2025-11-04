@@ -6,208 +6,151 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matheus Jesus</title>
   <link rel="stylesheet" href="Style.css" />
-
-  
-  <!-- Script para integrar Whatsapp -->
-  <script type="text/javascript">
-      window.onload = function(){
-      (function(d, script) {
-      script = d.createElement('script');
-      script.type = 'text/javascript';
-      script.async = true;
-      script.src = 'https://w.app/widget-v1/3V1zOd.js';
-      d.getElementsByTagName('head')[0].appendChild(script);
-      }(document));
-      };
-      </script>
-      
+  <script src="script.js" defer></script>
 </head>
-<!-- opções menu -->
+
 <body>
+  <!-- Cabeçalho e Menu -->
   <header>
     <nav class="menu-desktop">
       <ul>
         <li><a href="#inicio">INÍCIO</a></li>
         <li><a href="#sobre">SOBRE MIM</a></li>
-        <li><a href="#formacao">FORMAÇÃO</a></li>
         <li><a href="#projetos">PROJETOS</a></li>
+        <li><a href="#formacao">FORMAÇÃO</a></li>
         <li><a href="#contatos">CONTATO</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- Seção Início com minha foto-->
+    <!-- Início -->
     <section id="inicio">
       <img class="minhafoto" src="imagens/minhafoto.jpg" alt="Foto de Matheus Jesus" width="200" height="200" />
-
       <h1>Matheus Jesus</h1>
-     
+      <p style="text-align: center;">
+        <strong>Software Developer | Java | Spring Boot | JavaScript | MySQL</strong>
+      </p>
     </section>
 
-    <!-- Seção Sobre Mim -->
+    <!-- Sobre Mim -->
     <section id="sobre">
-
       <h2>Sobre Mim</h2>
-      <p><strong>28 anos</strong> | Estudante de Programação.</p> 
-      <p>Estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento back-end. Apaixonado por resolver problemas e criar soluções funcionais e escaláveis.</p>
-      <p>Sou uma pessoa movida pela curiosidade e pelo desejo constante de evolução. 
-      Desde que comecei a estudar programação, encontrei na tecnologia não apenas uma carreira, mas uma forma de resolver problemas de forma prática e inteligente.
-      Tenho perfil analítico, gosto de entender como as coisas funcionam e de construir soluções que realmente façam sentido para quem vai utilizá-las. 
-      Valorizo boas práticas, organização e trabalho em equipe.</p>
-      <p>Busco oportunidades para aplicar meus conhecimentos, crescer com desafios reais de mercado e contribuir para equipes colaborativas e inovadoras.</p>
+      <p>Estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento back-end em Java e Spring Boot. Apaixonado por resolver problemas e criar soluções funcionais e escaláveis.</p>
+      <p>Experiência prática em criação de APIs REST, autenticação com JWT & Spring Security, versionamento com Git, testes unitários com JUnit5 e Mockito, integração com bancos de dados relacionais. Boa capacidade de aprendizado e colaboração em equipes ágeis, contribuindo em projetos que envolvem arquitetura limpa, SOLID e boas práticas de código. Aplicando conhecimentos e evoluindo profissionalmente na área de desenvolvimento.</p>
+      <p>Busco novas experiências para aplicar meus conhecimentos, crescer com desafios reais e contribuir com a equipe de forma colaborativa e inovadora.</p>
     </section>
 
-    <!-- Formação Acadêmica -->
-    <section id="formacao" class="formacao-container">
-  <div class="formacao-box">
-   
-    <h2>Formação Acadêmica</h2>
-    <br>
-
-    <img class="img-esquerda" src="imagens/uninter.png" alt="Logo UNINTER" />
-<br>
-    <div class="formacao-texto">
-      <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
-      <p><strong>Instituição:</strong> Centro Universitário Internacional – UNINTER</p>
-      <p><strong>Conclusão prevista:</strong> Junho/2027</p>
-      <p><strong>Status:</strong> Atualmente cursando.</p>
-    </div>
-  </div>
-</section>
-<br><br>
     <!-- Conhecimentos Técnicos -->
     <section>
       <h2>Conhecimentos Técnicos</h2>
       <ul>
-        <li>Java (POO, boas práticas, tratamento de exceções, coleções)</li>
-        <li>Spring Boot (REST APIs, MVC, injeção de dependência, segurança básica)</li>
-        <li>MySQL (modelagem relacional, consultas SQL, JOINs, normalização)</li>
-        <li>HTML5 e CSS3 (estruturação e estilização de páginas)</li>
-        <li>Git e GitHub (branches, commits, pull requests)</li>
-        <li>Metodologias Ágeis (Scrum, Kanban) e Postman para testes de APIs</li>
+        <li><strong>Linguagens:</strong> Java, JavaScript, Python, HTML, CSS, SQL, HTTP, JSON</li>
+        <li><strong>Ambientes de Desenvolvimento:</strong> IntelliJ IDEA, VS Code</li>
+        <li><strong>Versionamento:</strong> Git, GitHub, Flyway</li>
+        <li><strong>Testes:</strong> JUnit5, Mockito, Postman</li>
+        <li><strong>Frameworks:</strong> Spring Security, JWT, Spring Data JPA, Hibernate, Bootstrap</li>
+        <li><strong>Bancos de Dados:</strong> MySQL, PostgreSQL – Modelagem UML</li>
+        <li><strong>Ferramentas/DevOps:</strong> Linux, Maven, AWS, Docker, Kubernetes</li>
+        <li><strong>Metodologias:</strong> Scrum, Kanban</li>
+        <li><strong>Boas Práticas:</strong> Clean Code, Design Patterns, Clean Architecture, SOLID</li>
+        <li><strong>Conceitos:</strong> APIs RESTful, Programação Orientada a Objetos (POO), Programação Funcional, Microserviços</li>
+        <li><strong>Outros:</strong> Noções de Redes, Segurança da Informação, Algoritmos e Estruturas de Dados</li>
       </ul>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos">
+      <h2>Projetos</h2>
+
+      <h3>* Catálogo de Vendas Online (E-commerce) | Out/2025 - <em>Em desenvolvimento</em></h3>
+      <p>
+        Desenvolvimento de uma aplicação backend completa usando <strong>Java</strong> e <strong>Spring Boot</strong>, com arquitetura orientada ao domínio e foco em segurança e escalabilidade. Implantei autenticação com <strong>JWT</strong> e <strong>Spring Security</strong>, garantindo acesso seguro ao painel administrativo. Apliquei <strong>DTOs</strong> para desacoplamento, versionamento de banco com <strong>Flyway</strong> e cobertura de testes com <strong>JUnit5</strong> e <strong>Mockito</strong> para maior confiabilidade. Realizei o deploy no <strong>Railway</strong>, habilitando acesso público ao sistema.
+      </p>
+      <p><strong>Stack:</strong> Java, Spring Boot, Spring Security, JPA/Hibernate, MySQL, HTML, CSS, JavaScript, Postman</p>
+
+      <br>
+
+      <h3>* Automatizador de Classificação de E-mails com IA | Set/2025</h3>
+      <p>
+        Desenvolvimento de um sistema inteligente para automatizar o tratamento de e-mails corporativos, utilizando <strong>FastAPI</strong> no backend e modelos de <strong>NLP</strong> do <strong>Hugging Face</strong> para análise semântica. O sistema permite upload de arquivos <code>.txt</code> e <code>.pdf</code>, realiza extração de texto com <strong>pdfplumber</strong> e classifica mensagens como <em>Produtivas</em> ou <em>Improdutivas</em>. Além disso, gera respostas automáticas editáveis diretamente no frontend.
+      </p>
+      <p><strong>Stack:</strong> Python 3, FastAPI, Hugging Face Transformers, pdfplumber, HTML5, CSS3, JavaScript (Fetch API)</p>
+
+      <br>
+
+      <h3>* Sistema de Gestão para Clube de Tiro | Mar/2025 – Jun/2025</h3>
+      <p>
+        Desenvolvimento de uma aplicação completa para controle de clientes e processos legais, utilizando <strong>Spring Boot</strong> e arquitetura bem estruturada com separação de camadas. Integrei o <strong>Frontend</strong> ao backend para renderização das páginas e utilizei <strong>JPA</strong> com <strong>PostgreSQL</strong> para manipulação eficiente dos dados. A modelagem inicial em <strong>UML</strong> garantiu coerência no design do banco e nas regras de negócio.
+      </p>
+      <p><strong>Stack:</strong> Java, Spring Boot, JavaScript, HTML, CSS, Spring Data JPA, Thymeleaf, PostgreSQL</p>
     </section>
 
     <!-- Habilidades -->
     <section>
       <h2>Habilidades</h2>
-      <ol>
-        <li>Inglês (B1)</li>
-        <li>Proatividade e senso crítico</li>
-        <li>Trabalho em equipe e boa comunicação técnica</li>
-        <li>Organização e comprometimento com prazos</li>
-        <li>Foco na qualidade do código e aprendizado contínuo</li>
-      </ol>
-    </section>
-
-    <!-- Experiência -->
-    <section id="projetos">
-      <h2>Experiência</h2>
-      <h3>Projeto Pessoal: Sistema de Gestão para Despachante Bélico</h3>
-      <p>Desenvolvimento de um sistema com Java, Spring Boot, Thymeleaf e MySQL.</p>
-      <p>Funcionalidades como CRUD, validação de dados e integração com banco de dados.</p>
-      <p>Aplicação de boas práticas de programação, arquitetura MVC e uso de GitHub para versionamento.</p>
-
-      <h4>🛠 Stack:</h4>
       <ul>
-        <li>Java, Spring Boot, Thymeleaf, MySQL, HTML/CSS, Git</li>
-        <li>CRUD completo e integração com MySQL</li>
-        <li>Arquitetura MVC e boas práticas de POO</li>
-        <li>Uso do Thymeleaf para renderização de páginas</li>
-        <li>Projeto em evolução com testes unitários e possível Spring Security</li>
+        <li><strong>Resolução de problemas:</strong> identifica e soluciona bugs e desafios técnicos com eficiência.</li>
+        <li><strong>Trabalho em equipe:</strong> colabora com colegas e stakeholders, compartilhando conhecimento.</li>
+        <li><strong>Comunicação clara:</strong> traduz conceitos técnicos para públicos não técnicos.</li>
+        <li><strong>Organização e gestão do tempo:</strong> cumpre prazos e metas de forma consistente.</li>
+        <li><strong>Aprendizado contínuo:</strong> busca novas tecnologias e boas práticas.</li>
+        <li><strong>Adaptabilidade:</strong> lida bem com mudanças de escopo e novas demandas.</li>
       </ul>
-
-
-      <h3>Projeto Pessoal: Banco de Dados Relacional com MySQL</h3>  
-      <h4>🛠 Processo:</h4>
-      <p>Prática na criação, modelagem e consulta de bancos de dados relacionais utilizando MySQL, um dos sistemas de gerenciamento de banco de dados (SGBD) mais utilizados no mercado.</p>
-
-      <p>Durante o desenvolvimento de projetos, utilizo modelagem relacional para estruturar entidades, atributos e relacionamentos de forma lógica e eficiente. </p>
-
     </section>
 
-    <!-- contatos -->
+    <!-- Formação Acadêmica -->
+    <section id="formacao">
+      <h2>Formação Acadêmica</h2>
+      <div class="formacao-box">
+        <img class="img-esquerda" src="imagens/uninter.png" alt="Logo UNINTER" />
+        <div class="formacao-texto">
+          <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
+          <p><strong>Instituição:</strong> Centro Universitário Internacional – UNINTER</p>
+          <p><strong>Conclusão prevista:</strong> Junho/2027</p>
+          <p><strong>Status:</strong> Atualmente cursando</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contatos -->
     <section id="contatos">
       <h2>Contato</h2>
       <ul>
         <li>🗃️ <a href="https://github.com/Matheusjsg" target="_blank">GitHub</a></li>
         <li>💻 <a href="https://www.linkedin.com/in/matheus-jesus-0131781b5/" target="_blank">LinkedIn</a></li>
-        <li>📱 <a href="https://api.whatsapp.com/send?phone=%205571992471530&text=Ol%C3%A1%2C+preciso+falar+com+voc%C3%AA%21" target="_blank">WhatsApp</a></li>
+        <li>📱 <a href="https://api.whatsapp.com/send?phone=5571992471530&text=Olá%2C+preciso+falar+com+você%21" target="_blank">WhatsApp</a></li>
       </ul>
-</section>
+    </section>
+
+    <!-- Formulário de Contato -->
     <section id="contato" class="contato-container">
-  <h2>
+      <h2>Envie uma Mensagem</h2>
+      <form id="formContato" class="form-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
 
-    <!-- formulario de envio de email-->
-  </h2>Envie uma Mensagem</h2>
-  
-  <form id="formContato" class="form-contato">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" name="nome" required />
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required />
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-    <label for="mensagem">Mensagem:</label>
-    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+      </form>
+    </section>
 
-    <button type="submit">Enviar Mensagem</button>
-  </form>
-  </section>
+    <!-- Alerta de sucesso -->
+    <div id="mensagem-sucesso" class="sucesso" style="display: none;">
+      ✅ Mensagem enviada com sucesso!
+    </div>
+  </main>
 
-<!-- Alerta de sucesso -->
-  <div id="mensagem-sucesso" class="sucesso" style="display: none;">
-    ✅ Mensagem enviada com sucesso!
-  </div>
-    <!-- Script para exibir mensagem de sucesso -->
-<script>
-  const form = document.getElementById('formContato');
-  const mensagemSucesso = document.getElementById('mensagem-sucesso');
-
-  form.addEventListener('submit', async function (e) {
-    e.preventDefault();
-
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('email').value;
-    const mensagem = document.getElementById('mensagem').value;
-
-    const dados = {
-      nome: nome,
-      email: email,
-      mensagem: mensagem
-    };
-
-    try {
-      const resposta = await fetch("https://apienvioemail.onrender.com/api/contato", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(dados)
-      });
-
-      if (resposta.ok) {
-        mensagemSucesso.style.display = "block";
-        form.reset();
-        setTimeout(() => {
-          mensagemSucesso.style.display = "none";
-        }, 4000);
-      } else {
-        alert("Erro ao enviar mensagem. Tente novamente.");
-      }
-    } catch (erro) {
-      alert("Erro na conexão com o servidor.");
-      console.error(erro);
-    }
-  });
-</script>
-  
   <!-- Rodapé -->
-
-<footer class="rodape">
-  <p>&copy; 2025 Matheus Jesus. Todos os direitos reservados.</p>
-</footer>
-
-</main>
+  <footer class="rodape">
+    <p>&copy; 2025 Matheus Jesus. Todos os direitos reservados.</p>
+  </footer>
 </body>
 
 </html>
+
